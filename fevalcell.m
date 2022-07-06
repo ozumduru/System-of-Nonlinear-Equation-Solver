@@ -1,7 +1,9 @@
 function[f]=fevalcell(z,xi)
-n = numel(xi);
 
-xi=splitcell(n,xi);
+n = numel(z);
+n2 = numel(xi);
+
+xi=splitcell(n2,xi);
 f=zeros(n,1);
 
 for i = 1:n
